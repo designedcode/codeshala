@@ -1,0 +1,618 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <!-- Basic Structure
+    ================================================== -->         
+        <title>Codeshala</title>         
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content="Codeshala - Teaching Code to your Kid"> 
+        <!-- Favicon -->         
+        <link href="../assets/images/favicon.png" rel="icon" type="image/png"> 
+        <!-- CSS 
+    ================================================== -->         
+        <link rel="stylesheet" href="../assets/css/style.css"> 
+        <link rel="stylesheet" href="../assets/css/night-mode.css"> 
+        <link rel="stylesheet" href="../assets/css/framework.css"> 
+        <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+        <!-- icons
+    ================================================== -->         
+        <link rel="stylesheet" href="../assets/css/icons.css"> 
+    </head>     
+    <body> 
+        <div id="wrapper" class="admin-panel"> 
+            <!-- menu -->             
+            <div class="page-menu"> 
+                <!-- btn close on small devices -->                 
+                <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span> 
+                <!-- traiger btn -->                 
+                <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span> 
+                <!-- logo -->                 
+                <div class="logo uk-visible@s"> 
+                    <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Codeshala</span> </a> 
+                </div>                 
+                <div class="page-menu-inner" data-simplebar> 
+                    <ul class="mt-0"> 
+                        <li>
+                            <a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard </span></a> 
+                        </li>                         
+                        <li>
+                            <a href="courses.html"><i class="uil-youtube-alt"></i> <span> Courses </span></a> 
+                        </li>                         
+                        <li>
+                            <a href="orders.html"><i class="uil-tag-alt"></i> <span> Orders </span></a> 
+                        </li>                         
+                        <li>
+                            <a href="centers.html"><i class="uil-layers-alt"></i> <span> Centers</span></a> 
+                        </li>                         
+                        <li>
+                            <a href="students.html"><i class="uil-users-alt"></i> <span> Students/Parents</span></a> 
+                        </li>                         
+                        <li>
+                            <a href="teachers.html"><i class="uil-user"></i> <span> Teachers</span></a> 
+                        </li>
+                        <li>
+                            <a href="classes.html"><i class="uil-chart-line"></i> <span> Class Reports</span></a> 
+                        </li>                         
+                    </ul>                     
+                    <ul>
+                        <li>
+                            <a href="login.html"><i class="uil-sign-out-alt"></i> <span> Sign-out</span></a> 
+                        </li>                         
+                    </ul>
+                </div>                 
+            </div>             
+            <!-- Header Container
+        ================================================== -->             
+            <header class="header uk-light"> 
+                <div class="container"> 
+                    <nav uk-navbar> 
+                        <!-- left Side Content -->                         
+                        <div class="uk-navbar-left"> 
+                            <!-- menu icon -->                             
+                            <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active"> <button class="hamburger hamburger--collapse" type="button"> 
+                                    <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> 
+                                </button> </span> 
+                            <!-- logo -->                             
+                            <a href="dashboard.html" class="logo"> <img src="../assets/images/logo-dark.svg" alt=""> <span> Codeshala</span> </a> 
+                            <div class="searchbox uk-visible@s"> 
+                                <input class="uk-search-input" type="search" placeholder="Search..."> 
+                                <button class="btn-searchbox"> </button>                                 
+                            </div>                             
+                            <!-- Search box dropdown -->                             
+                            <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small" class="dropdown-search"> 
+                                <div class="erh BR9 MIw" style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;"> 
+                                    <svg width="22" height="22"> 
+                                        <path d="M0 24 L12 12 L24 24"></path>                                         
+                                    </svg>
+                                </div>                                 
+                                <!-- User menu -->                                 
+                                <ul class="dropdown-search-list"> 
+                                    <li class="list-title"> 
+                                        Recent Searches
+</li>                                     
+                                    <li> 
+                                        <a href="course-intro.html"> 
+                                        Teacher name</a> 
+                                    </li>                                     
+                                    <li>
+                                        <a href="course-intro.html"> 
+                                        Student Name </a> 
+                                    </li>                                     
+                                    <li>
+                                        <a href="course-intro.html"> 
+                                        Parent Name </a> 
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                        </div>                         
+                        <!--  Right Side Content   -->                         
+                        <div class="uk-navbar-right"> 
+                            <div class="header-widget"> 
+                                <!-- notificiation icon  -->                                 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: Notificiation ; pos: bottom ;offset:21"> <i class="uil-bell"></i> <span>4</span> </a> 
+                                <!-- notificiation dropdown -->                                 
+                                <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small" class="dropdown-notifications"> 
+                                    <!-- notivication header -->                                     
+                                    <div class="dropdown-notifications-headline"> 
+                                        <h4>Notifications </h4> 
+                                        <a href="#"> <i class="icon-feather-settings" uk-tooltip="title: Notifications settings ; pos: left"></i> </a> 
+                                    </div>                                     
+                                    <!-- notification contents -->                                     
+                                    <div class="dropdown-notifications-content" data-simplebar> 
+</div>                                     
+                                </div>                                 
+                                                              
+                                <!-- profile-icon-->                                 
+                                <div class="dropdown-user-details"> 
+                                    <div class="dropdown-user-avatar"> 
+                                        <img src="../assets/images/avatars/avatar-2.jpg" alt=""> 
+                                    </div>                                     
+                                    <div class="dropdown-user-name"> 
+                                        Pavan 
+                                        <span>Adminstrator</span> 
+                                    </div>                                     
+                                </div>                                 
+                                <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small"> 
+                                    <!-- User menu -->                                     
+                                    <ul class="dropdown-user-menu"> 
+                                        <li> 
+                                            <a href="#"> <i class="icon-material-outline-dashboard"></i> Dashboard</a> 
+                                        </li>                                         
+                                        <li>
+                                            <a href="profile-edit.html"> <i class="icon-feather-settings"></i> Account Settings</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a href="#" id="night-mode" class="btn-night-mode"> <i class="icon-feather-moon"></i> Night mode <span class="btn-night-mode-switch"> <span class="uk-switch-button"></span> </span> </a> 
+                                        </li>                                         
+                                        <ul class="menu-divider"> 
+                                            <li>
+                                                <a href="page-login.html"> <i class="icon-feather-log-out"></i> Sign Out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </ul>
+                                </div>
+                            </div>                             
+                            <!-- icon search-->                             
+                            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"> <i class="uil-search icon-small"></i> </a> 
+                            <!-- User icons -->                             
+                            <span class="uil-user icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span> 
+                        </div>                         
+                        <!-- End Right Side Content / End -->                         
+                    </nav>                     
+                </div>                 
+                <!-- container  / End -->                 
+            </header>             
+            <!-- content -->             
+            <div class="page-content"> 
+                <div class="page-content-inner"> 
+                    <div class="d-flex"> 
+                        <nav id="breadcrumbs" class="mb-3"> 
+                            <ul> 
+                                <li>
+                                    <a href="#"> <i class="uil-home-alt"></i> </a>
+                                </li>                                 
+                                <li>
+                                    <a href="#"> Orders </a>
+                                </li>                                 
+                            </ul>                             
+                        </nav>                         
+                    </div>                     
+                    <div class="card"> 
+                        <!-- Card header -->                         
+                        <div class="card-header actions-toolbar border-0"> 
+                            <div class="d-flex justify-content-between align-items-center"> 
+                                <h4 class="d-inline-block mb-0">Orders</h4> 
+                                <div class="d-flex"> 
+                                    <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="Search"> <i class="uil-search"></i> </a> 
+                                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0"> 
+                                        <form class="uk-search uk-search-navbar uk-width-1-1"> 
+                                            <input class="uk-search-input shadow-0 uk-form-small" type="search" placeholder="Search..." autofocus> 
+                                        </form>                                         
+                                    </div>                                     
+                                    <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="filter"> <i class="uil-filter"></i> </a> 
+                                    <div uk-dropdown="pos: bottom-right ; mode: click ;animation: uk-animation-scale-up"> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li class="uk-active">
+                                                <a href="#"> Newest </a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="#">From A-Z</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="#">From Z-A</a>
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="More"> <i class="uil-ellipsis-h"></i> </a> 
+                                    <div uk-dropdown="pos: bottom-right ; mode: click ;animation: uk-animation-scale-up"> 
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li>
+                                                <a href="#"> Refresh </a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="#">Manage</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="#">Setting</a>
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <!-- Table -->                         
+                        <div class="table-responsive"> 
+                            <table class="table align-items-center"> 
+                                <thead> 
+                                    <tr> 
+                                        <th scope="col">Parent Name</th> 
+                                        <th scope="col">Ordered on</th> 
+                                        <th scope="col">Days </th> 
+                                        <th scope="col">Total Payments</th> 
+                                        <th scope="col">Kid/s</th> 
+                                        <th scope="col"> </th> 
+                                    </tr>                                     
+                                </thead>                                 
+                                <tbody class="list"> 
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div> 
+                                                    <div class="avatar-parent-child" style="width: max-content"> 
+                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="media-body ml-4"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                    <small class="d-block font-weight-bold">Order no #951</small> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 12 </td> 
+                                        <td> Rs.12,000 </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>                                             
+                                        </td>                                         
+                                        <td class="text-right"> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions ml-3"> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                </tbody>                                 
+                            </table>                             
+                        </div>                         
+                    </div>                     
+                    <!-- footer
+                ================================================== -->                     
+                    <div class="footer"> 
+                        <div class="uk-grid-collapse" uk-grid> 
+                            <div class="uk-width-expand@s uk-first-column"> 
+                                <p>© 2020 <strong>Codeshala</strong>. All Rights Reserved. </p> 
+                            </div>                             
+                            <div class="uk-width-auto@s"> 
+                                <nav class="footer-nav-icon"> 
+                                    <ul> 
+                                        <li>
+                                            <a href="#"><i class="icon-brand-facebook"></i></a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="#"><i class="icon-brand-dribbble"></i></a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="#"><i class="icon-brand-youtube"></i></a>
+                                        </li>                                         
+                                        <li>
+                                            <a href="#"><i class="icon-brand-twitter"></i></a>
+                                        </li>                                         
+                                    </ul>                                     
+                                </nav>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>
+        </div>
+        <!-- For Night mode -->         
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>         
+        <!-- javaScripts
+    ================================================== -->         
+        <script src="../assets/js/framework.js"></script>         
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>         
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/main.js"></script>         
+        <script src="../assets/js/bootstrap-select.min.js"></script>         
+        <script src="../assets/js/chart.min.js"></script>         
+        <script src="../assets/js/chart-custom.js"></script>         
+    </body>     
+</html>
