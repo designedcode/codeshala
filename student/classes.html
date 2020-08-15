@@ -1,14 +1,12 @@
 <!doctype html> 
 <html lang="en"> 
     <head> 
-        <!-- Basic Structure
+        <!-- Basic Page Needs
     ================================================== -->         
         <title>Codeshala</title>         
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <meta name="description" content="Codeshala - Teaching Code to your Kid"> 
-        <!-- Favicon -->         
-        <link href="../assets/images/favicon.png" rel="icon" type="image/png"> 
         <!-- CSS 
     ================================================== -->         
         <link rel="stylesheet" href="../assets/css/style.css"> 
@@ -20,8 +18,8 @@
         <link rel="stylesheet" href="../assets/css/icons.css"> 
     </head>     
     <body> 
-        <div id="wrapper" class="admin-panel"> 
-            <!-- menu -->             
+        <!-- Wrapper -->         
+        <div id="wrapper"> 
             <div class="page-menu"> 
                 <!-- btn close on small devices -->                 
                 <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span> 
@@ -33,38 +31,32 @@
                 </div>                 
                 <div class="page-menu-inner" data-simplebar> 
                     <ul class="mt-0"> 
-                        <li>
+                        <li> 
                             <a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard </span></a> 
                         </li>                         
-                        <li>
+                        <li> 
                             <a href="courses.html"><i class="uil-youtube-alt"></i> <span> Courses </span></a> 
                         </li>                         
-                        <li>
-                            <a href="orders.html"><i class="uil-tag-alt"></i> <span> Orders </span></a> 
+                        <li> 
+                            <a href="projects.html"><i class="uil-book"></i> <span> Projects </span></a> 
                         </li>                         
-                        <li>
-                            <a href="centers.html"><i class="uil-layers-alt"></i> <span> Centers</span></a> 
+                        <li> 
+                            <a href="classes.html"><i class="uil-history"></i> <span> Class History </span></a> 
                         </li>                         
-                        <li>
-                            <a href="students.html"><i class="uil-users-alt"></i> <span> Students/Parents</span></a> 
-                        </li>                         
-                        <li>
-                            <a href="teachers.html"><i class="uil-user"></i> <span> Teachers</span></a> 
-                        </li>
-                        <li>
-                            <a href="classes.html"><i class="uil-chart-line"></i> <span> Class Reports</span></a> 
+                        <li> 
+                            <a href="profile-edit.html"><i class="uil-user"></i> <span> Edit Profile </span></a> 
                         </li>                         
                     </ul>                     
-                    <ul>
-                        <li>
+                    <ul> 
+                        <li> 
                             <a href="login.html"><i class="uil-sign-out-alt"></i> <span> Sign-out</span></a> 
                         </li>                         
-                    </ul>
+                    </ul>                     
                 </div>                 
             </div>             
             <!-- Header Container
         ================================================== -->             
-            <header class="header uk-light"> 
+            <header class="header ukt"> 
                 <div class="container"> 
                     <nav uk-navbar> 
                         <!-- left Side Content -->                         
@@ -84,7 +76,7 @@
                                 <div class="erh BR9 MIw" style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;"> 
                                     <svg width="22" height="22"> 
                                         <path d="M0 24 L12 12 L24 24"></path>                                         
-                                    </svg>
+                                    </svg>                                     
                                 </div>                                 
                                 <!-- User menu -->                                 
                                 <ul class="dropdown-search-list"> 
@@ -95,11 +87,11 @@
                                         <a href="course-intro.html"> 
                                         Teacher name</a> 
                                     </li>                                     
-                                    <li>
+                                    <li> 
                                         <a href="course-intro.html"> 
                                         Student Name </a> 
                                     </li>                                     
-                                    <li>
+                                    <li> 
                                         <a href="course-intro.html"> 
                                         Parent Name </a> 
                                     </li>                                     
@@ -109,7 +101,34 @@
                         <!--  Right Side Content   -->                         
                         <div class="uk-navbar-right"> 
                             <div class="header-widget"> 
-<span class="icon-feather-x icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span>
+                                <span class="icon-feather-x icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span> 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: My Courses ; pos: bottom ;offset:21"> <i class="uil-youtube-alt"></i> </a> 
+                                <!-- Message  -->                                 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: Message ; pos: bottom ;offset:21"> <i class="uil-envelope-alt"></i> <span>1</span> </a> 
+                                <!-- Message  notificiation dropdown -->                                 
+                                <div uk-dropdown=" pos: top-right;mode:click" class="dropdown-notifications"> 
+                                    <!-- notivication header -->                                     
+                                    <div class="dropdown-notifications-headline"> 
+                                        <h4>Messages</h4> 
+                                        <a href="#"> <i class="icon-feather-settings" uk-tooltip="title: Message settings ; pos: left"></i> </a> 
+                                    </div>                                     
+                                    <!-- notification contents -->                                     
+                                    <div class="dropdown-notifications-content" data-simplebar> 
+                                        <!-- notiviation list -->                                         
+                                        <ul> 
+                                            <li class="notifications-not-read"> 
+                                                <a href="#"> <span class="notification-avatar"> <img src="../assets/images/avatars/avatar-3.jpg" alt=""> </span> <div class="notification-text notification-msg-text"> 
+                                                        <strong>Teacher</strong> 
+                                                        <p>Reminder for today's class </p> 
+                                                        <span class="time-ago"> 2 hours ago </span> 
+                                                    </div> </a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <div class="dropdown-notifications-footer"> 
+                                        <a href="#"> See all <i class="icon-line-awesome-long-arrow-right"></i> </a> 
+                                    </div>                                     
+                                </div>                                 
                                 <!-- notificiation icon  -->                                 
                                 <a href="#" class="header-widget-icon" uk-tooltip="title: Notificiation ; pos: bottom ;offset:21"> <i class="uil-bell"></i> <span>4</span> </a> 
                                 <!-- notificiation dropdown -->                                 
@@ -123,16 +142,11 @@
                                     <div class="dropdown-notifications-content" data-simplebar> 
 </div>                                     
                                 </div>                                 
-                               
-                                                                   
+                                <!-- profile-icon-->                                 
                                 <!-- profile-icon-->                                 
                                 <div class="dropdown-user-details"> 
                                     <div class="dropdown-user-avatar"> 
-                                        <img src="../assets/images/avatars/avatar-2.jpg" alt=""> 
-                                    </div>                                     
-                                    <div class="dropdown-user-name"> 
-                                        Pavan 
-                                        <span>Adminstrator</span> 
+                                        <img src="../assets/images/avatars/avatar-4.jpg" alt=""> 
                                     </div>                                     
                                 </div>                                 
                                 <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small"> 
@@ -141,19 +155,19 @@
                                         <li> 
                                             <a href="#"> <i class="icon-material-outline-dashboard"></i> Dashboard</a> 
                                         </li>                                         
-                                        <li>
+                                        <li> 
                                             <a href="profile-edit.html"> <i class="icon-feather-settings"></i> Account Settings</a> 
                                         </li>                                         
                                         <li> 
                                             <a href="#" id="night-mode" class="btn-night-mode"> <i class="icon-feather-moon"></i> Night mode <span class="btn-night-mode-switch"> <span class="uk-switch-button"></span> </span> </a> 
                                         </li>                                         
                                         <ul class="menu-divider"> 
-                                            <li>
+                                            <li> 
                                                 <a href="page-login.html"> <i class="icon-feather-log-out"></i> Sign Out</a> 
                                             </li>                                             
                                         </ul>                                         
-                                    </ul>
-                                </div>
+                                    </ul>                                     
+                                </div>                                 
                             </div>                             
                             <!-- icon search-->                             
                             <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"> <i class="uil-search icon-small"></i> </a> 
@@ -165,26 +179,24 @@
                 </div>                 
                 <!-- container  / End -->                 
             </header>             
-            <!-- content -->             
+            <!-- overlay seach on mobile-->             
+            <div class="nav-overlay uk-navbar-left uk-position-relative uk-flex-1 bg-grey uk-light p-2" hidden style="z-index: 10000;"> 
+                <div class="uk-navbar-item uk-width-expand" style="min-height: 60px;"> 
+                    <form class="uk-search uk-search-navbar uk-width-1-1"> 
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus> 
+                    </form>                     
+                </div>                 
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a> 
+            </div>             
+            <!-- Content
+        ================================================== -->             
             <div class="page-content"> 
-                <div class="page-content-inner"> 
-                    <div class="d-flex"> 
-                        <nav id="breadcrumbs" class="mb-3"> 
-                            <ul> 
-                                <li>
-                                    <a href="#"> <i class="uil-home-alt"></i> </a>
-                                </li>                                 
-                                <li>
-                                    <a href="#"> Students/Parents </a>
-                                </li>                                 
-                            </ul>                             
-                        </nav>                         
-                    </div>                     
+                <div class="page-content-inner">                      
                     <div class="card"> 
                         <!-- Card header -->                         
                         <div class="card-header actions-toolbar border-0"> 
                             <div class="d-flex justify-content-between align-items-center"> 
-                                <h4 class="d-inline-block mb-0">Students and Parents</h4> 
+                                <h4 class="d-inline-block mb-0">Class Reports</h4> 
                                 <div class="d-flex"> 
                                     <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="Search Parent"> <i class="uil-search"></i> </a> 
                                     <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0"> 
@@ -228,441 +240,311 @@
                             <table class="table align-items-center"> 
                                 <thead> 
                                     <tr> 
-                                        <th scope="col">Parent Name</th> 
-                                        <th scope="col">Joined at</th> 
-                                        <th scope="col">Courses</th> 
-                                        <th scope="col">Students</th> 
+                                        <th scope="col">Course Name</th> 
+                                        <th scope="col">Date</th> 
+                                        <th scope="col">Time</th> 
+                                        <th scope="col">Teacher</th> 
                                         <th scope="col"></th> 
-                                        <th scope="col"> </th> 
+                                        <th scope="col">Homework</th> 
                                     </tr>                                     
                                 </thead>                                 
                                 <tbody class="list"> 
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
-                                            <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
-                                            </div>                                             
-                                        </td>                                         
-                                    </tr>
-                                    <tr> 
-                                        <th scope="row"> 
-                                            <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </th>                                         
-                                        <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
-                                            </div>
-                                        </td>                                         
-                                        <td class="text-right"> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
                                     <tr> 
                                         <th scope="row"> 
                                             <div class="media align-items-center"> 
-                                                <div> 
-                                                    <div class="avatar-parent-child" style="width: max-content"> 
-                                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-2.jpg" class="avatar  rounded-circle"> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="media-body ml-4"> 
-                                                    <a href="#" class="name h6 mb-0 text-sm">Pavan Kumar</a> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
                                                 </div>                                                 
                                             </div>                                             
                                         </th>                                         
                                         <td> 10/09/2020 </td> 
-                                        <td> 5 </td> 
-                                        <td> 2 Kids </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
                                         <td> 
-                                            <div class="avatar-parent-child" style="width: max-content"> 
-                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-3.jpg" class="avatar  rounded-circle"> 
-                                            </div>
                                             <div class="avatar-parent-child" style="width: max-content"> 
                                                 <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
                                             </div>
                                         </td>                                         
-                                        <td class="text-right"> 
+                                        <td> 
                                             <!-- Actions -->                                             
-                                            <div class="actions ml-3"> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Quick view"> <i class="uil-external-link-alt "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Edit"> <i class="uil-pen "></i> </a> 
-                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Mail User"> <i class="uil-envelope"></i> </a> 
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
+                                            </div>                                             
+                                        </td>                                         
+                                    </tr>                                     
+                                    <tr> 
+                                        <th scope="row"> 
+                                            <div class="media align-items-center"> 
+                                                <div class="media-body ml-2"> 
+                                                    <a href="#" class="name h6 mb-0 text-sm">Game Developement</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </th>                                         
+                                        <td> 10/09/2020 </td> 
+                                        <td> 5:00 PM </td> 
+                                        <td> Avni Kumari </td> 
+                                        <td> 
+                                            <div class="avatar-parent-child" style="width: max-content"> 
+                                                <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg" class="avatar  rounded-circle"> 
+                                            </div>
+                                        </td>                                         
+                                        <td> 
+                                            <!-- Actions -->                                             
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle" uk-tooltip="Assigned Homework"> <i class="uil-book-alt "> Homework</i></a> 
                                             </div>                                             
                                         </td>                                         
                                     </tr>                                     
@@ -699,7 +581,7 @@
                     </div>                     
                 </div>                 
             </div>
-        </div>
+        </div>         
         <!-- For Night mode -->         
         <script>
             (function (window, document, undefined) {

@@ -1,0 +1,418 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <!-- Basic Page Needs
+    ================================================== -->         
+        <title>Codeshala</title>         
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content="Codeshala - Teaching Code to your Kid"> 
+        <!-- CSS 
+    ================================================== -->         
+        <link rel="stylesheet" href="../assets/css/style.css"> 
+        <link rel="stylesheet" href="../assets/css/night-mode.css"> 
+        <link rel="stylesheet" href="../assets/css/framework.css"> 
+        <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+        <!-- icons
+    ================================================== -->         
+        <link rel="stylesheet" href="../assets/css/icons.css"> 
+    </head>     
+    <body> 
+        <!-- Wrapper -->         
+        <div id="wrapper"> 
+            <div class="page-menu"> 
+                <!-- btn close on small devices -->                 
+                <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span> 
+                <!-- traiger btn -->                 
+                <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span> 
+                <!-- logo -->                 
+                <div class="logo uk-visible@s"> 
+                    <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Codeshala</span> </a> 
+                </div>                 
+                <div class="page-menu-inner" data-simplebar> 
+                    <ul class="mt-0"> 
+                        <li>
+                            <a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard </span></a> 
+                        </li>                         
+                        <li>
+                            <a href="courses.html"><i class="uil-youtube-alt"></i> <span> Courses </span></a> 
+                        </li>
+                        <li>
+                            <a href="projects.html"><i class="uil-book"></i> <span> Projects </span></a> 
+                        </li>
+                        <li>
+                            <a href="classes.html"><i class="uil-history"></i> <span> Class History </span></a> 
+                        </li>
+                        <li>
+                            <a href="profile-edit.html"><i class="uil-user"></i> <span> Edit Profile </span></a> 
+                        </li>                         
+                    </ul>                     
+                    <ul>
+                        <li>
+                            <a href="login.html"><i class="uil-sign-out-alt"></i> <span> Sign-out</span></a> 
+                        </li>                         
+                    </ul>
+                </div>                 
+            </div>             
+            <!-- Header Container
+        ================================================== -->             
+            <header class="header ukt"> 
+                <div class="container"> 
+                    <nav uk-navbar> 
+                        <!-- left Side Content -->                         
+                        <div class="uk-navbar-left"> 
+                            <!-- menu icon -->                             
+                            <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active"> <button class="hamburger hamburger--collapse" type="button"> 
+                                    <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> 
+                                </button> </span> 
+                            <!-- logo -->                             
+                            <a href="dashboard.html" class="logo"> <img src="../assets/images/logo-dark.svg" alt=""> <span> Codeshala</span> </a> 
+                            <div class="searchbox uk-visible@s"> 
+                                <input class="uk-search-input" type="search" placeholder="Search..."> 
+                                <button class="btn-searchbox"> </button>                                 
+                            </div>                             
+                            <!-- Search box dropdown -->                             
+                            <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small" class="dropdown-search"> 
+                                <div class="erh BR9 MIw" style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;"> 
+                                    <svg width="22" height="22"> 
+                                        <path d="M0 24 L12 12 L24 24"></path>                                         
+                                    </svg>
+                                </div>                                 
+                                <!-- User menu -->                                 
+                                <ul class="dropdown-search-list"> 
+                                    <li class="list-title"> 
+                                        Recent Searches
+</li>                                     
+                                    <li> 
+                                        <a href="course-intro.html"> 
+                                        Teacher name</a> 
+                                    </li>                                     
+                                    <li>
+                                        <a href="course-intro.html"> 
+                                        Student Name </a> 
+                                    </li>                                     
+                                    <li>
+                                        <a href="course-intro.html"> 
+                                        Parent Name </a> 
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                        </div>                         
+                        <!--  Right Side Content   -->                         
+                        <div class="uk-navbar-right"> 
+                            <div class="header-widget">
+                                <span class="icon-feather-x icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span> 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: My Courses ; pos: bottom ;offset:21"> <i class="uil-youtube-alt"></i> </a>
+                                <!-- Message  -->                                 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: Message ; pos: bottom ;offset:21"> <i class="uil-envelope-alt"></i> <span>1</span> </a> 
+                                <!-- Message  notificiation dropdown -->                                 
+                                <div uk-dropdown=" pos: top-right;mode:click" class="dropdown-notifications"> 
+                                    <!-- notivication header -->                                     
+                                    <div class="dropdown-notifications-headline"> 
+                                        <h4>Messages</h4> 
+                                        <a href="#"> <i class="icon-feather-settings" uk-tooltip="title: Message settings ; pos: left"></i> </a> 
+                                    </div>                                     
+                                    <!-- notification contents -->                                     
+                                    <div class="dropdown-notifications-content" data-simplebar> 
+                                        <!-- notiviation list -->                                         
+                                        <ul> 
+                                            <li class="notifications-not-read"> 
+                                                <a href="#"> <span class="notification-avatar"> <img src="../assets/images/avatars/avatar-3.jpg" alt=""> </span> <div class="notification-text notification-msg-text"> 
+                                                        <strong>Teacher</strong> 
+                                                        <p>Reminder for today's class </p> 
+                                                        <span class="time-ago"> 2 hours ago </span> 
+                                                    </div> </a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <div class="dropdown-notifications-footer"> 
+                                        <a href="#"> See all <i class="icon-line-awesome-long-arrow-right"></i> </a> 
+                                    </div>                                     
+                                </div>                                 
+                                <!-- notificiation icon  -->                                 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: Notificiation ; pos: bottom ;offset:21"> <i class="uil-bell"></i> <span>4</span> </a> 
+                                <!-- notificiation dropdown -->                                 
+                                <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small" class="dropdown-notifications"> 
+                                    <!-- notivication header -->                                     
+                                    <div class="dropdown-notifications-headline"> 
+                                        <h4>Notifications </h4> 
+                                        <a href="#"> <i class="icon-feather-settings" uk-tooltip="title: Notifications settings ; pos: left"></i> </a> 
+                                    </div>                                     
+                                    <!-- notification contents -->                                     
+                                    <div class="dropdown-notifications-content" data-simplebar> 
+</div>                                     
+                                </div>
+                                <!-- profile-icon-->                                 
+                                <!-- profile-icon-->                                 
+                                <div class="dropdown-user-details"> 
+                                    <div class="dropdown-user-avatar"> 
+                                        <img src="../assets/images/avatars/avatar-4.jpg" alt=""> 
+                                    </div>                                     
+                                </div>                                 
+                                <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small"> 
+                                    <!-- User menu -->                                     
+                                    <ul class="dropdown-user-menu"> 
+                                        <li> 
+                                            <a href="#"> <i class="icon-material-outline-dashboard"></i> Dashboard</a> 
+                                        </li>                                         
+                                        <li>
+                                            <a href="profile-edit.html"> <i class="icon-feather-settings"></i> Account Settings</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a href="#" id="night-mode" class="btn-night-mode"> <i class="icon-feather-moon"></i> Night mode <span class="btn-night-mode-switch"> <span class="uk-switch-button"></span> </span> </a> 
+                                        </li>                                         
+                                        <ul class="menu-divider"> 
+                                            <li>
+                                                <a href="page-login.html"> <i class="icon-feather-log-out"></i> Sign Out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </ul>
+                                </div>
+                            </div>                             
+                            <!-- icon search-->                             
+                            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"> <i class="uil-search icon-small"></i> </a> 
+                            <!-- User icons -->                             
+                            <span class="uil-user icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span> 
+                        </div>                         
+                        <!-- End Right Side Content / End -->                         
+                    </nav>                     
+                </div>                 
+                <!-- container  / End -->                 
+            </header>             
+            <!-- overlay seach on mobile-->             
+            <div class="nav-overlay uk-navbar-left uk-position-relative uk-flex-1 bg-grey uk-light p-2" hidden style="z-index: 10000;"> 
+                <div class="uk-navbar-item uk-width-expand" style="min-height: 60px;"> 
+                    <form class="uk-search uk-search-navbar uk-width-1-1"> 
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus> 
+                    </form>                     
+                </div>                 
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a> 
+            </div>             
+            <!-- Content
+        ================================================== -->             
+            <div class="page-content"> 
+                <div class="page-content-inner"> 
+                    <div uk-grid> 
+                        <div class="uk-width-expand@m"> 
+                            <div class="section-small"> 
+                                <div class="section-header"> 
+                                    <div class="section-header-left"> 
+                                        <h4> Courses in progess</h4> 
+                                    </div>                                     
+                                </div>                                 
+                                <div class="uk-child-width-1-3@s" uk-grid> 
+                                    <div> 
+                                        <div class="card animate-this"> 
+                                            <a href="#"> <div class="course-card-resume"> 
+                                                    <div class="course-card-resume-thumbnail"> 
+                                                        <img src="../assets/images/course/2.png"> 
+                                                    </div>                                                     
+                                                    <div class="course-card-resume-body"> 
+                                                        <h5>Game Developement</h5> 
+                                                        <span class="number"> 8 Classes left </span> 
+                                                        <div class="course-progressbar"> 
+                                                            <div class="course-progressbar-filler" style="width:33%"></div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div> <a href="#" class="btn btn-default uk-visible@s mt-2"> <i class="uil-calender"></i> Schedule class </a> </a> 
+                                        </div>
+                                    </div>                                     
+                                    <div> 
+                                        <div class="card animate-this"> 
+                                            <a href="#"> <div class="course-card-resume"> 
+                                                    <div class="course-card-resume-thumbnail"> 
+                                                        <img src="../assets/images/course/2.png"> 
+                                                    </div>                                                     
+                                                    <div class="course-card-resume-body"> 
+                                                        <h5>Game Developement</h5> 
+                                                        <span class="number"> 8 Classes left </span> 
+                                                        <div class="course-progressbar"> 
+                                                            <div class="course-progressbar-filler" style="width:33%"></div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div> <a href="#" class="btn btn-default uk-visible@s mt-2"> <i class="uil-calender"></i> Schedule class </a> </a> 
+                                        </div>
+                                    </div>                                     
+                                    <div> 
+                                        <div class="card animate-this"> 
+                                            <a href="#"> <div class="course-card-resume"> 
+                                                    <div class="course-card-resume-thumbnail"> 
+                                                        <img src="../assets/images/course/2.png"> 
+                                                    </div>                                                     
+                                                    <div class="course-card-resume-body"> 
+                                                        <h5>Game Developement</h5> 
+                                                        <span class="number"> 8 Classes left </span> 
+                                                        <div class="course-progressbar"> 
+                                                            <div class="course-progressbar-filler" style="width:33%"></div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div> <a href="#" class="btn btn-default uk-visible@s mt-2"> <i class="uil-calender"></i> Schedule class </a> </a> 
+                                        </div>
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="section-small"> 
+                                <div class="section-header"> 
+                                    <div class="section-header-left"> 
+                                        <h4> Your Projects</h4> 
+                                    </div>                                     
+                                    <div class="section-header-right"> 
+                                        <a href="#" class="btn btn-default uk-visible@s"> <i class="uil-plus"></i> Add Projects</a>
+                                    </div>                                     
+                                </div>                                 
+                                <div class="uk-position-relative" tabindex="-1" uk-slider="autoplay: true"> 
+                                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid"> 
+                                        <li> 
+                                            <a href="book-description.html"> <div class="book-card"> 
+                                                    <div class="book-cover"> 
+                                                        <img src="../assets/images/course/2.png" alt=""> 
+                                                    </div>                                                     
+                                                    <div class="book-content"> 
+                                                        <h5> Project Name</h5> 
+                                                    </div>                                                     
+                                                </div> </a>
+                                        </li>                                         
+                                        <li> 
+                                            <a href="book-description.html"> <div class="book-card"> 
+                                                    <div class="book-cover"> 
+                                                        <img src="../assets/images/course/2.png" alt=""> 
+                                                    </div>                                                     
+                                                    <div class="book-content"> 
+                                                        <h5> Project Name</h5> 
+                                                    </div>                                                     
+                                                </div> </a>
+                                        </li>                                         
+                                        <li> 
+                                            <a href="book-description.html"> <div class="book-card"> 
+                                                    <div class="book-cover"> 
+                                                        <img src="../assets/images/course/2.png" alt=""> 
+                                                    </div>                                                     
+                                                    <div class="book-content"> 
+                                                        <h5> Project Name</h5> 
+                                                    </div>                                                     
+                                                </div> </a>
+                                        </li>                                         
+                                        <li> 
+                                            <a href="book-description.html"> <div class="book-card"> 
+                                                    <div class="book-cover"> 
+                                                        <img src="../assets/images/course/2.png" alt=""> 
+                                                    </div>                                                     
+                                                    <div class="book-content"> 
+                                                        <h5> Project Name</h5> 
+                                                    </div>                                                     
+                                                </div> </a>
+                                        </li>                                         
+                                    </ul>                                     
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover slidenav-prev" href="#" uk-slider-item="previous"></a> 
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover slidenav-next" href="#" uk-slider-item="next"></a> 
+                                    <div class="uk-flex uk-flex-center mt-2"> 
+                                        <ul class="uk-slider-nav uk-dotnav"></ul>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="uk-width-medium@m"> 
+                            <div class="profile-cards" uk-sticky="offset: 90; bottom: true; media: @m;top:2"> 
+                                <div class="user-profile-photo"> 
+                                    <img src="../assets/images/avatars/avatar-4.jpg" alt=""> 
+                                </div>                                 
+                                <h4> Student </h4> 
+                                <ul class="uk-list uk-list-divider text-center mb-0 mt-3 uk-text-small"> 
+                                    <li>
+                                        <div class="star-rating">
+                                            <span class="avg"> 4.5 </span> 
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star half"></span> 
+                                        </div>
+                                    </li>
+                                </ul>                                 
+                                <div class="profile-cards-footer mt-1"> 
+                                    <a href="#"> <i class="uil-youtube-alt"></i> 3 Courses </a> 
+                                </div>
+                                <div class="profile-cards-footer mb-1 mt-1"> 
+                                    <a href="#"> <i class="uil-book"></i> 4 Projects </a> 
+                                </div>
+                                <a href="#" class="btn btn-default uk-visible@s"> <i class="uil-user"></i> Edit Profile </a> 
+                            </div>                             
+                        </div>
+                    </div>                     
+                </div>                 
+                <!-- footer
+                ================================================== -->                 
+                <div class="footer"> 
+                    <div class="uk-grid-collapse" uk-grid> 
+                        <div class="uk-width-expand@s uk-first-column"> 
+                            <p>© 2020 <strong>Codeshala</strong>. All Rights Reserved. </p> 
+                        </div>                         
+                        <div class="uk-width-auto@s"> 
+                            <nav class="footer-nav-icon"> 
+                                <ul> 
+                                    <li>
+                                        <a href="#"><i class="icon-brand-facebook"></i></a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#"><i class="icon-brand-dribbble"></i></a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#"><i class="icon-brand-youtube"></i></a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#"><i class="icon-brand-twitter"></i></a>
+                                    </li>                                     
+                                </ul>                                 
+                            </nav>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>
+        <!-- For Night mode -->         
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>         
+        <!-- javaScripts
+    ================================================== -->         
+        <script src="../assets/js/framework.js"></script>         
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>         
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/main.js"></script>         
+        <script src="../assets/js/bootstrap-select.min.js"></script>         
+        <script src="../assets/js/chart.min.js"></script>         
+        <script src="../assets/js/chart-custom.js"></script>         
+    </body>     
+</html>
