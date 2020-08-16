@@ -1,0 +1,331 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <!-- Basic Page Needs
+    ================================================== -->         
+        <title>Codeshala</title>         
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content="Codeshala - Teaching Code to your Kid"> 
+        <!-- CSS 
+    ================================================== -->         
+        <link rel="stylesheet" href="../assets/css/style.css"> 
+        <link rel="stylesheet" href="../assets/css/night-mode.css"> 
+        <link rel="stylesheet" href="../assets/css/framework.css"> 
+        <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+        <!-- icons
+    ================================================== -->         
+        <link rel="stylesheet" href="../assets/css/icons.css"> 
+    </head>     
+    <body> 
+        <!-- Wrapper -->         
+        <div id="wrapper"> 
+            <div class="page-menu"> 
+                <!-- btn close on small devices -->                 
+                <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span> 
+                <!-- traiger btn -->                 
+                <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span> 
+                <!-- logo -->                 
+                <div class="logo uk-visible@s"> 
+                    <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Codeshala</span> </a> 
+                </div>                 
+                <div class="page-menu-inner" data-simplebar> 
+                    <ul class="mt-0"> 
+                        <li>
+                            <a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard </span></a> 
+                        </li>                         
+                        <li>
+                            <a href="orders.html"><i class="uil-cart"></i> <span> Order History </span></a> 
+                        </li>
+                        <li>
+                            <a href="classes.html"><i class="uil-history"></i> <span> Kids Class History </span></a> 
+                        </li>
+                        <li>
+                            <a href="parent-profile.html"><i class="uil-user"></i> <span> Profile Setting </span></a> 
+                        </li>                         
+                    </ul>                     
+                    <ul>
+                        <li>
+                            <a href="login.html"><i class="uil-sign-out-alt"></i> <span> Sign-out</span></a> 
+                        </li>                         
+                    </ul>
+                </div>                 
+            </div>             
+            <!-- Header Container
+        ================================================== -->             
+            <header class="header ukt"> 
+                <div class="container"> 
+                    <nav uk-navbar> 
+                        <!-- left Side Content -->                         
+                        <div class="uk-navbar-left"> 
+                            <!-- menu icon -->                             
+                            <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active"> <button class="hamburger hamburger--collapse" type="button"> 
+                                    <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> 
+                                </button> </span> 
+                            <!-- logo -->                             
+                            <a href="dashboard.html" class="logo"> <img src="../assets/images/logo-dark.svg" alt=""> <span> Codeshala</span> </a> 
+                            <div class="searchbox uk-visible@s"> 
+                                <input class="uk-search-input" type="search" placeholder="Search..."> 
+                                <button class="btn-searchbox"> </button>                                 
+                            </div>                             
+                            <!-- Search box dropdown -->                             
+                            <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small" class="dropdown-search"> 
+                                <div class="erh BR9 MIw" style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;"> 
+                                    <svg width="22" height="22"> 
+                                        <path d="M0 24 L12 12 L24 24"></path>                                         
+                                    </svg>
+                                </div>                                 
+                                <!-- User menu -->                                 
+                                <ul class="dropdown-search-list"> 
+                                    <li class="list-title"> 
+                                        Recent Searches
+</li>                                     
+                                    <li> 
+                                        <a href="course-intro.html"> 
+                                        Teacher name</a> 
+                                    </li>                                     
+                                    <li>
+                                        <a href="course-intro.html"> 
+                                        Student Name </a> 
+                                    </li>                                     
+                                    <li>
+                                        <a href="course-intro.html"> 
+                                        Parent Name </a> 
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                        </div>                         
+                        <!--  Right Side Content   -->                         
+                        <div class="uk-navbar-right"> 
+                            <div class="header-widget">
+                                <span class="icon-feather-x icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span> 
+                                <!-- notificiation icon  -->                                 
+                                <a href="#" class="header-widget-icon" uk-tooltip="title: Notificiation ; pos: bottom ;offset:21"> <i class="uil-bell"></i> <span>4</span> </a> 
+                                <!-- notificiation dropdown -->                                 
+                                <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small" class="dropdown-notifications"> 
+                                    <!-- notivication header -->                                     
+                                    <div class="dropdown-notifications-headline"> 
+                                        <h4>Notifications </h4> 
+                                        <a href="#"> <i class="icon-feather-settings" uk-tooltip="title: Notifications settings ; pos: left"></i> </a> 
+                                    </div>                                     
+                                    <!-- notification contents -->                                     
+                                    <div class="dropdown-notifications-content" data-simplebar> 
+</div>                                     
+                                </div>
+                                <!-- profile-icon-->                                 
+                                <!-- profile-icon-->                                 
+                                <div class="dropdown-user-details"> 
+                                    <div class="dropdown-user-avatar"> 
+                                        <img src="../assets/images/avatars/home-profile.jpg" alt=""> 
+                                    </div>                                     
+                                </div>                                 
+                                <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small"> 
+                                    <!-- User menu -->                                     
+                                    <ul class="dropdown-user-menu"> 
+                                        <li> 
+                                            <a href="#"> <i class="icon-material-outline-dashboard"></i> Dashboard</a> 
+                                        </li>                                         
+                                        <li>
+                                            <a href="profile-edit.html"> <i class="icon-feather-settings"></i> Account Settings</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a href="#" id="night-mode" class="btn-night-mode"> <i class="icon-feather-moon"></i> Night mode <span class="btn-night-mode-switch"> <span class="uk-switch-button"></span> </span> </a> 
+                                        </li>                                         
+                                        <ul class="menu-divider"> 
+                                            <li>
+                                                <a href="page-login.html"> <i class="icon-feather-log-out"></i> Sign Out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </ul>
+                                </div>
+                            </div>                             
+                            <!-- icon search-->                             
+                            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"> <i class="uil-search icon-small"></i> </a> 
+                            <!-- User icons -->                             
+                            <span class="uil-user icon-small uk-hidden@s" uk-toggle="target: .header-widget ; cls: is-active"> </span> 
+                        </div>                         
+                        <!-- End Right Side Content / End -->                         
+                    </nav>                     
+                </div>                 
+                <!-- container  / End -->                 
+            </header>             
+            <div class="page-content">
+                <div class="page-content-inner"> 
+                    <h2>Account</h2> 
+                    <nav class="responsive-tab mb-4"> 
+                        <li class="uk-active">
+                            <a href="#">Account</a>
+                        </li>                         
+                        <li>
+                            <a href="#">Billing</a>
+                        </li>                         
+                        <li>
+                            <a href="#">Payment</a>
+                        </li>
+                        <li>
+                            <a href="user-profile-edit.html">Setting</a>
+                        </li>                         
+                    </nav>                     
+                    <div uk-grid> 
+                        <div class="uk-width-2-5@m"> 
+                            <div class="uk-card-default rounded text-center p-4"> 
+                                <div class="user-profile-photo  m-auto"> 
+                                    <img src="../assets/images/avatars/home-profile.jpg" alt=""> 
+                                </div>                                 
+                                <h4 class="mb-2 mt-3"> Parent </h4> 
+                                <p class="m-0"> I care for my children </p> 
+                            </div>
+                            <div class="uk-card-default rounded mt-5 pb-2"> 
+                                <div class="uk-flex uk-flex-between uk-flex-middle py-3 px-4"> 
+                                    <h5 class="mb-0"> Kid/s registered </h5> 
+                                    <a href="#" uk-tooltip="title:Edit Account; pos: left"> <i class="icon-feather-settings"></i> </a> 
+                                </div>                                 
+                                <hr class="m-0">
+                                <ul class="mt-3">
+                                    <li>
+                                        <h5> Kid Name </h5>
+                                    </li>
+                                    <li>
+                                        <h5> Kid Name </h5>
+                                    </li>
+                                </ul>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="uk-width-expand@m"> 
+                            <div class="uk-card-default rounded"> 
+                                <div class="uk-flex uk-flex-between uk-flex-middle py-3 px-4"> 
+                                    <h5 class="mb-0"> Account details </h5> 
+                                    <a href="#" uk-tooltip="title:Edit Account; pos: left"> <i class="icon-feather-settings"></i> </a> 
+                                </div>                                 
+                                <hr class="m-0"> 
+                                <div class="uk-child-width-1-2@s uk-grid-small p-4" uk-grid> 
+                                    <div> 
+                                        <h6 class="uk-text-bold"> First Name </h6> 
+                                        <p> Parent </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> Last Name </h6> 
+                                        <p> Kumar </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> Your email address </h6> 
+                                        <p> parentmail@gmail.com </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> Phone </h6> 
+                                        <p> +91 123 456 5678 </p> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="uk-card-default rounded mt-4"> 
+                                <div class="uk-flex uk-flex-between uk-flex-middle py-3 px-4"> 
+                                    <h5 class="mb-0"> Billing Details </h5> 
+                                    <a href="#" uk-tooltip="title: Edit Billing address; pos: left"> <i class="icon-feather-settings"></i> </a> 
+                                </div>                                 
+                                <hr class="m-0"> 
+                                <div class="uk-child-width-1-2@s uk-grid-small p-4" uk-grid> 
+                                    <div> 
+                                        <h6 class="uk-text-bold"> Account Number </h6> 
+                                        <p> 911004708448 </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> Bank </h6> 
+                                        <p> Axis Bank </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> City </h6> 
+                                        <p> New Delhi </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> Pin Code </h6> 
+                                        <p> 110065 </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> State </h6> 
+                                        <p> Delhi </p> 
+                                    </div>                                     
+                                    <div> 
+                                        <h6 class="uk-text-bold"> IFSC Code </h6> 
+                                        <p> UTIB00786 </p> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                </div>
+                <!-- footer
+               ================================================== -->                 
+                <div class="footer"> 
+                    <div class="uk-grid-collapse" uk-grid> 
+                        <div class="uk-width-expand@s uk-first-column"> 
+                            <p>© 2020 <strong>Codeshala</strong>. All Rights Reserved. </p> 
+                        </div>                         
+                        <div class="uk-width-auto@s"> 
+                            <nav class="footer-nav-icon"> 
+                                <ul> 
+                                    <li>
+                                        <a href="#"><i class="icon-brand-facebook"></i></a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#"><i class="icon-brand-dribbble"></i></a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#"><i class="icon-brand-youtube"></i></a>
+                                    </li>                                     
+                                    <li>
+                                        <a href="#"><i class="icon-brand-twitter"></i></a>
+                                    </li>                                     
+                                </ul>                                 
+                            </nav>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- For Night mode -->         
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>         
+        <!-- javaScripts
+    ================================================== -->         
+        <script src="../assets/js/framework.js"></script>         
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>         
+        <script src="../assets/js/simplebar.js"></script>         
+        <script src="../assets/js/main.js"></script>         
+        <script src="../assets/js/bootstrap-select.min.js"></script>         
+        <script src="../assets/js/chart.min.js"></script>         
+        <script src="../assets/js/chart-custom.js"></script>         
+    </body>     
+</html>
