@@ -1095,6 +1095,7 @@ body {
 .our-students-achievers-section .our-students-achievers-card-wrapper .our-students-achievers-card .student-info {
   font-size: 12px;
 }
+}
 @media (min-width: 768px) {
   .our-students-achievers-section .our-students-achievers-card-wrapper .our-students-achievers-card .student-info {
     font-size: 18px;
@@ -1470,4 +1471,4 @@ body {
   }
     
 }
-}
+
