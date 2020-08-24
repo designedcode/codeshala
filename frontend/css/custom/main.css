@@ -1223,7 +1223,7 @@ body {
 }
 .project-cards-wrapper .project-card .view-course-btn {
   background: #0CE49F 0% 0% no-repeat padding-box;
-  box-shadow: 0px 20px 20px #656D7441;
+  box-shadow: 0px 20px 20px #0FBD8C;
   color: white;
   font-weight: 600;
   font-size: 12px;
@@ -1623,7 +1623,7 @@ background-color: #ffbf00;
   color: lightgrey;
 }
 .profile-fluid .info-section-row .main-col .skills-info .skills-set .skill-set .view-course-btn {
-  background: #0CE49F 0% 0% no-repeat padding-box;
+  background: #0FBD8C 0% 0% no-repeat padding-box;
   box-shadow: 0px 20px 20px #656D7441;
   color: white;
   font-weight: 600;
@@ -1683,7 +1683,7 @@ background-color: #ffbf00;
 }
 .profile-fluid .info-section-row .main-col .projects-info .project-cards-wrapper .project-card .buy-now-btn {
   background: #FFBF00 0% 0% no-repeat padding-box;
-  box-shadow: 0px 20px 20px #656D7441;
+  box-shadow: 0px 20px 20px #FFBF00;
   color: white;
   font-weight: 600;
   font-size: 12px !important;
@@ -1692,90 +1692,13 @@ background-color: #ffbf00;
   bottom: -5%;
 }
 .profile-fluid .info-section-row .main-col .projects-info .project-cards-wrapper .project-card .view-course-btn {
-  background: #0CE49F 0% 0% no-repeat padding-box;
+  background: #0FBD8C 0% 0% no-repeat padding-box;
   box-shadow: 0px 20px 20px #656D7441;
-  color: white;
+  color: white; 
   font-weight: 600;
   font-size: 12px !important;
   position: absolute;
   left: 4%;
   bottom: -5%;
 }
-.profile-fluid .info-section-row .main-col .courses-info {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-.profile-fluid .info-section-row .main-col .courses-info .courses-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list {
-  margin-left: 45px;
-  margin-right: 45px;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card {
-  box-shadow: 6px 10px 40px #00000029;
-  color: #545469;
-  border-radius: 30px;
-  min-width: 300px;
-  max-width: 300px;
-}
-@media (max-width: 991.98px) {
-  .profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card {
-    min-width: 300px;
-  }
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card .our-courses-card-img {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  min-height: 180px;
-  background-image: url("https://via.placeholder.com/300");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 991.98px) {
-  .profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card .our-courses-card-img {
-    min-height: 180px;
-  }
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card h5 {
-  font-size: 18px;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card ul {
-  font-size: 13px;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card ul li i {
-  color: #26BD0F;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card .discounted-price {
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card .original-price {
-  font-size: 12px;
-  font-style: italic;
-  text-decoration: line-through;
-  padding-bottom: 15px;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card .free-demo-btn {
-  background: #0FBD8C 0% 0% no-repeat padding-box;
-  box-shadow: 0px 20px 20px #656D7441;
-  color: white;
-  font-weight: 550;
-  font-size: 12px;
-  text-transform: uppercase;
-  position: absolute;
-  left: 6%;
-  bottom: -5%;
-}
-.profile-fluid .info-section-row .main-col .courses-info .our-courses-list .our-courses-card .buy-now-btn {
-  background: #FFBF00 0% 0% no-repeat padding-box;
-  box-shadow: 0px 20px 20px #656D7441;
-  color: white;
-  font-weight: 550;
-  font-size: 12px;
-  text-transform: uppercase;
-  position: absolute;
-  right: 6%;
-  bottom: -5%;
-}
+
